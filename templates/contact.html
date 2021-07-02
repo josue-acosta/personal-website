@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}Contact +{% endblock %}
+
+{% block body %}
+
+<div class="contact-page">
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <h5>Contact Information</h5>
+                <div class="row">
+                    <div class="col s12">
+                        <p><span style="unicode-bidi:bidi-override; direction: rtl;">moc.liamg@100yawslabinnaH</span>
+                        </p>
+                    </div>
+                    <div class="col s12">
+                        <p>
+                            <span style="unicode-bidi:bidi-override; direction: rtl;">5263-223-515</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <h5>Social Accounts</h5>
+                <div class="row">
+                    <div class="col s12">
+                        <a href="https://github.com/josue-acosta">
+                            <img alt="github" src="{{ url_for('static', filename='images/github-01.png') }}" class="responsive-img left">
+                            <p>GitHub</p>
+                        </a>
+                    </div>
+                    <div class="col s12">
+                        <a href="https://www.linkedin.com/in/josueacosta/">
+                            <img alt="linkedin" src="{{ url_for('static', filename='images/linkedin.png') }}" class="responsive-img left">
+                            <p>LinkedIn</p>
+                        </a>
+                    </div>
+                    <div class="col s12">
+                        <a href="https://twitter.com/ja_alejandre">
+                            <img alt="twitter" src="{{ url_for('static', filename='images/twitter.png') }}" class="responsive-img left">
+                            <p>Twitter</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

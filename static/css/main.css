@@ -1,0 +1,131 @@
+/* Layout Page  ******************************/
+body {
+    background-image: url("/static/images/bg.png")
+}
+
+.layout-page {
+    min-height: 100vh;
+}
+
+
+
+/* Home Page  ******************************/
+.hero-text{
+    padding-top: 5rem;
+    font-size: 3.7rem;
+}
+
+.tag-line-padding {
+    padding-top: 4rem;
+}
+
+.tag-line {
+    font-size: 1rem;
+}
+
+.yellow-highlighter {
+    background-color: #fff938;
+    padding: 5px; 
+    display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+    .tag-line {
+        font-size: 1.25rem;
+    }
+
+    .hero-text{
+        font-size: 4.2rem;
+    }
+  }
+
+
+
+/* About Page  ******************************/
+.bg-dots {
+    background-color: #fff;
+    background-size: 8px 8px;
+    background-image: radial-gradient(#f0f2f0 15%,transparent 16%);
+}
+
+.about-page h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-page .material-icons {
+    vertical-align: middle;
+}
+
+.about-page .card-title {
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+.about-page .card .card-action {
+    padding: 16px 0 0;
+}
+
+
+
+
+/* Work Page  ******************************/
+#skills h2 {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin: 1rem 0 1.424rem 0;
+}
+
+#skills .col img.responsive-img {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#project-base-skills .card-image {
+    padding: 2rem 2rem 0;
+}
+
+.work-page .text-center {
+    text-align: center;
+}
+
+
+
+/* Contact Page  ******************************/
+.contact-page {
+    margin-top: 3.52rem
+}
+
+.contact-page img {
+    margin: 15px 15px 0 0;
+    max-width: 25px;
+}
+
+.contact-page .material-icons {
+    vertical-align: middle;
+}
+
+
+/* Email Page  ******************************/
+.email-page {
+    margin-top: 3.52rem
+}
+
+.email-page h1 {
+    margin-top: 2.2rem;
+}
+
+.email-image {
+    max-width: 250px;
+}
+
+.copy {
+    margin-top: 1rem;
+    display: inline-block;
+}
+

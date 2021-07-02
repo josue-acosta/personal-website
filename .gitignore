@@ -1,0 +1,7 @@
+# Files
+resources.txt
+
+# Directories
+venv
+__pycache__/
+__pycache__/app.cpython-36.pyc
