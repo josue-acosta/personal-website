@@ -1,23 +1,374 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Home +{% endblock %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-{% block body %}
+    <title>Home +</title>
 
-<div class="home-page">
-    <div class="row section">
-        <div class="col s9 offset-s3">
-            <p class="tag-line tag-line-padding right-align">I want to <span class="yellow-highlighter">make
-                    things</span></p>
-            <p class="tag-line right-align">that <span class="yellow-highlighter">make a difference</span></p>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Import CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='gallery/css/gallery-materialize.css') }}" />
+</head>
+
+<body>
+    <header>
+        <nav role="navigation" class="blue">
+            <div class="nav-wrapper container">
+
+                <!-- Logo -->
+                <a id="logo-container" href="{{ url_for('home') }}" class="brand-logo">Josué Acosta</a>
+
+                <!-- Main Nav Bar -->
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="{{ url_for('home') }}">Home +</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('about') }}">About +</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('contact') }}">Contact +</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Nav Bar  -->
+                <ul id="nav-mobile" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlmtSvsJL7B9u0lVFoZNV94HEhyVUPj4X5gjJZ1C-j1SAY-A3">
+                            </div>
+                            <span class="name">Josué Acosta</span>
+                            <span style="unicode-bidi:bidi-override; direction: rtl;" class="email">moc.liamg@100yawslabinnaH</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('home') }}">Home +</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('about') }}">About +</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('contact') }}">Contact +</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Nav Bar Icon -->
+                <a href="#" data-target="nav-mobile" class="right sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="home-page">
+        <!-- hero section start -->
+        <div class="container">
+            <div class="section-hero">
+                <div class="row section">
+                    <div class="col s12 m6 ">
+                        <p class="tag-line tag-line-padding right-align">I want to <span class="blue lighten-1">make things</span></p>
+                        <p class="tag-line right-align">that <span class="blue lighten-1">make a difference</span></p>
+                        <h1 class="hero-text">Web<br>Developer</h1>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <img class="responsive-img" src="{{ url_for('static', filename='images/hero.gif') }}" alt="placeholder">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- hero section end-->
 
-    <div class="row section">
-        <div class="col s9">
-            <h1 class="hero-text">Web<br>Developer</h1>
+        <!-- case study section start -->
+        <div class="container">
+
+            <h2 class="center underline">Case Studies</h2>
+            <div class="gallery row">
+
+                <!-- 1st case study -->
+                <div class="col s12 gallery-item gallery-expand gallery-filter polygon hoverable">
+                    <div class="gallery-curve-wrapper">
+                        <a class="gallery-cover gray">
+                            <img class="responsive-img hoverable" src="{{ url_for('static', filename='images/mi-systema-app.png') }}" alt="placeholder">
+                        </a>
+                        <div class="gallery-header">
+                            <span>Mi Systema Web App</span>
+                        </div>
+                        <div class="gallery-body">
+                            <div class="title-wrapper">
+                                <h3>Mi Systema Web App</h3>
+                            </div>
+                            <p class="description">Mi Casa Cake Shop is a storefront bakery owned by an entrepreneurial Latina. It has been serving the Hispanic community for the past 20 years and sees no plan in stopping.</p>
+
+                            <h2>About the Project</h2>
+                            <p>Mi Casa Cake Shop recently opened its first storefront. More phone calls, messages, and walk-ins rolled in than ever before. They quickly saw the need to consolidate and systematize her order-taking procedure.</p>
+
+                            <p>Mi Casa came to me with their problem. I understood her issue when it came to workflow and technical limitations so it seemed I would be a great fit. We collaborate and found out we needed to centralize her conversations to one device and one application, simplify her cake orders, and track and visualize her progress.</p>
+
+                            <h2>How I Made It</h2>
+                            <p>The project's north star was categorizing all of the incoming requests and integrating them into the workflow.</p>
+
+                            <p>I first created a paper order form for all the details they needed for the cake order. Then I created two online versions: One we use to create orders internally and a second one on our website where the public can place an order online. Mi Casa can print online orders onto the exact order form as the paper version. They use the printed order forms on a large Kanban wall where the progress is monitored and visualized.</p>
+
+                            <p>Lastly, I consolidated text messages, Facebook's Messenger, and Instagram's Direct Messages into one location.</p>
+
+                            <p>As a result of working with Mi Casa, they've seen and felt the ease of taking orders. Seamless workflow integration was the driving force in creating the web app.</p>
+
+                            <h2>Services</h2>
+                            <ul class="collection">
+                                <li class="collection-item">Created multi-media cake order form</li>
+                                <li class="collection-item">Established a Kanban system</li>
+                                <li class="collection-item">Internal and External Online Orders Forms</li>
+                                <li class="collection-item">Multi-channel Conversation Manager</li>
+                                <a href="https://www.josue-acosta.app/dashboard/channels" target="_blank" class="collection-item">Vist the Demo <i class="tiny material-icons">open_in_new</i></a>
+                            </ul>
+
+                            <div class="carousel-wrapper">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#one!"><img src="{{ url_for('static', filename='images/mi-systema-order-form.png') }}"></a>
+                                    <a class="carousel-item" href="#two!"><img src="{{ url_for('static', filename='images/mi-systema-kanban.png') }}"></a>
+                                    <a class="carousel-item" href="#three!"><img src="{{ url_for('static', filename='images/mi-systema-external-order-form.png') }}"></a>
+                                    <a class="carousel-item" href="#four!"><img src="{{ url_for('static', filename='images/mi-systema-internal-order-form.png') }}"></a>
+                                    <a class="carousel-item" href="#five!"><img src="{{ url_for('static', filename='images/mi-systema-multi-channel.png') }}"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./ -->
+
+                <!-- 2nd case study -->
+                <div class="col s12 gallery-item gallery-expand gallery-filter polygon hoverable">
+                    <div class="gallery-curve-wrapper">
+                        <a class="gallery-cover gray">
+                            <img class="responsive-img" src="https://atlanticwebexchange.com/wp-content/uploads/2016/10/browsers-mi-casa-1170x550.png" alt="placeholder">
+                        </a>
+                        <div class="gallery-header">
+                            <span>Mi Casa Cake Shop</span>
+                        </div>
+                        <div class="gallery-body">
+                            <div class="title-wrapper">
+                                <h3>Mi Casa Cake&nbsp;Shop</h3>
+                            </div>
+                            <p class="description">Mi Casa Cake Shop is a home-run bakery owned by an entrepreneurial Latina. It has been serving the Hispanic community for the past 17 years and sees no plan in stopping.</p>
+
+                            <h2>About the Project</h2>
+                            <p>Mi Casa Cake Shop didn't have a Business ID but heard how powerful it can be. She knew having a consistent design throughout her business gains customer trust and recognition. But what she didn't know was what message she wanted to send and how.</p>
+
+                            <p>Mi Casa came to me with her problem and I understood her issue when it came to design and language barrier so it seemed I would be a great fit. We collaborate and found out that a logo, business cards, building sign, and a website would solve her issues of not being identified, introducing herself, having her storefront found, and having an online presence.</p>
+
+                            <h2>How I Made It</h2>
+                            <p>The project's north star was the warmth and hospitality of the Hispanic culture. The logo's colors reflect the bright and vibrant Latin tile used in home decoration. This carries to her business cards which make a great first impression.</p>
+
+                            <p>As a result of working with Mi Casa's they've seen the true spirit of bringing every business to the market. Proper translation was a driving force in creating her website. Every page is available to her customer's native language—English and Spanish. With love and attention, you'll feel at home at Mi Casa.</p>
+
+                            <h2>Services</h2>
+                            <ul class="collection">
+                                <li class="collection-item">Logo</li>
+                                <a href="https://micasacakeshop.com/" target="_blank" class="collection-item">Website</a>
+                                <li class="collection-item">Business Cards</li>
+                                <li class="collection-item">Now Open Flyer</li>
+                                <li class="collection-item">Window Singage</li>
+                            </ul>
+
+                            <div class="carousel-wrapper">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#one!"><img src="{{ url_for('static', filename='images/mi-casa-logo.png') }}"></a>
+                                    <a class="carousel-item" href="#two!"><img src="{{ url_for('static', filename='images/mi-casa-business-card.png') }}"></a>
+                                    <a class="carousel-item" href="#three!"><img src="{{ url_for('static', filename='images/mi-casa-flyer.png') }}"></a>
+                                    <a class="carousel-item" href="#four!"><img src="{{ url_for('static', filename='images/mi-casa-store-front-logo.png') }}"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./ -->
+
+                <!-- 3rd case study -->
+                <div class="col s12 gallery-item gallery-expand gallery-filter polygon hoverable">
+                    <div class="gallery-curve-wrapper">
+                        <a class="gallery-cover gray">
+                            <img class="responsive-img" src="https://atlanticwebexchange.com/wp-content/uploads/2016/10/portfolio-wsc-browsers-1170x550.png" alt="placeholder">
+                        </a>
+                        <div class="gallery-header">
+                            <span>West Side Strength &amp; Conditioning</span>
+                        </div>
+                        <div class="gallery-body">
+                            <div class="title-wrapper">
+                                <h3>West Side Strength &amp; Conditioning</h3>
+                            </div>
+                            <p class="description">
+                                Westside Strength &amp; Conditioning is the strongest group training gym in the city. Owned by long-time personal trainer and fitness instructor Calvin Ridlen, you get all the intensity with none of the injuries.</p>
+
+                            <h2>About the Project</h2>
+                            <p>Westside Strength &amp; Conditioning didn't have a Business ID but heard how powerful it can be. He knew having consistent design throughout his business gains customer trust and recognition. But what he didn't know was what message he wanted to send and how.</p>
+
+                            <p>WSC came to me with his problem and I understood his issue when it came to having a big-picture design of his and so it seemed I would be a great fit. We collaborate and found out that a website and emails would solve his issue of promoting fitness challenges, initiating personal training, having his storefront found, and having an online presence.</p>
+
+                            <h2>How I Made It</h2>
+                            <p>The project's north star was the supportive energy of WSC's Fit Family culture. The gym's bright blue reflects encouragement and the vibrant green, explosive exercises. This carries to his website which makes a great first impression by laying his company colors on a cool, hard, concrete backdrop.</p>
+
+                            <p>As a result of working with WSC's they've seen the true spirit of
+                                bringing every business to the market. Proper SEO was a driving force in creating his website. The single page layout was designed to keep the visitor on the web page while providing them with the content they need. With his gentle&mdash;yet authoritative&mdash;voice echoing in the emails, members get the same instruction on how to better themselves outside the gym.</p>
+
+                            <h2>Services</h2>
+                            <ul class="collection">
+                                <li class="collection-item">Website</li>
+                                <li class="collection-item">Search Engine Optimization</li>
+                                <li class="collection-item">Email Campaign</li>
+                            </ul>
+
+                            <div class="carousel-wrapper">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#two!"><img src="{{ url_for('static', filename='images/wsc-email.png') }}"></a>
+                                    <a class="carousel-item" href="#one!"><img src="{{ url_for('static', filename='images/wsc-seo.png') }}"></a>
+                                    <a class="carousel-item" href="#one!"><img src="{{ url_for('static', filename='images/wsc-web-analytics.png') }}"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./ -->
+
+            </div>
+            <!-- case study section end -->
         </div>
-    </div>
+        <!-- case study section end -->
 
-</div>
-{% endblock %}
+        <!-- project base skills start -->
+        <div class="container">
+            <div class="row">
+                <div class="section" id="project-base-skills">
+                    <h2 class="center">Project Based Skills</h2>
+
+                    <!-- 1st project base skills -->
+                    <div class="col s12 m6 l4">
+                        <div class="card hoverable">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator responsive-img" src="{{ url_for('static', filename='images/iaa-calculator.png') }}">
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4">Insurance Auto Auction Calculator</span>
+                                <p class="activator">View Details</p>
+                            </div>
+
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Problem<i class="material-icons right">close</i></span>
+
+                                <p>Patrons would ask for an sum total of vehicles they bought or placed bids; it had to be done maually.
+                                </p>
+                                <h2>Solution</h2>
+                                <p>I created web app in JavaScript to calculate total price of cars for the after-auction rush which reduced the time we spent answering common pricing questions by 40%.</p>
+
+                                <div class="card-action">
+                                    <a href="https://www.figma.com/file/lYgRxY6EA1IYwvbmYxGwDQ/buyers-fee?node-id=0%3A1" target="_blank">View Screenshot</a>
+                                </div>
+
+                                <h2>Techology</h2>
+                                <ul class="collection">
+                                    <li class="collection-item">HTML5</li>
+                                    <li class="collection-item">CSS3</li>
+                                    <li class="collection-item">JavaScript</li>
+                                    <li class="collection-item">JQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- ./ -->
+
+                    <!-- 2nd project base skills -->
+                    <div class="col s12 m6 l4">
+                        <div class="card hoverable">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator responsive-img" src="{{ url_for('static', filename='images/questionnaire.png') }}">
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4">Returning Workers' Questionnaire</span>
+                                <p class="activator">View Details</p>
+                            </div>
+
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Problem<i class="material-icons right">close</i></span>
+                                <p>We needed a way for candidates to fill out an online form but the majority had limited computer literacy skills and internet access. They where, however, familiar with using smartphones.
+                                </p>
+
+                                <h2>Solution</h2>
+                                <p>We decided to work with their strengths and designed a lightweight, mobile-friendly online questionnaire. The form was built to accommodate for poor cell phone reception and small screens while still being intuitive.</p>
+
+                                <h2>Techology</h2>
+                                <ul class="collection">
+                                    <li class="collection-item">Ruby</li>
+                                    <li class="collection-item">Ruby on Rails</li>
+                                    <li class="collection-item">Foundation CSS</li>
+                                    <li class="collection-item">JavaScript</li>
+                                    <li class="collection-item">MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- ./ -->
+
+                    <!-- 3rd project base skills -->
+                    <div class="col s12 m6 l4">
+                        <div class="card hoverable">
+
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator responsive-img" src="{{ url_for('static', filename='images/pay-or-play.png') }}">
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4">Play or Pay Contest</span>
+                                <p class="activator">View Details</p>
+                            </div>
+
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Service<i class="material-icons right">close</i></span>
+                                <p>Orchestrated the promotion of a contest through email, a landing page and in-person conversations. 20% of trial members signed up for full-time membership.</p>
+
+                                <div class="card-action">
+                                    <a href="http://unbouncepages.com/demo-102088/" target="_blank">View Landing Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- ./ -->
+
+                </div>
+            </div>
+            <!-- project base skills end -->
+        </div>
+        <!-- project base skills start -->
+
+        <!-- about me link start -->
+        <div class="container">
+            <div class="row blue">
+                <div class="col s12 right-align link-hover">
+                    <a href="{{ url_for('about') }}">
+                        <h2 class="about-me-link">About Me <i class="material-icons">chevron_right</i> </h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- about me link end -->
+    </main>
+
+    <!-- Core Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='gallery/js/imagesloaded.pkgd.min.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="{{ url_for('static', filename='gallery/js/galleryExpand.js') }}"></script>
+    <script src="{{ url_for('static', filename='gallery/js/init.js') }}"></script>
+</body>
+
+</html>

@@ -10,7 +10,9 @@
 
     <!-- Import Google Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Coming+Soon|Handlee|Pangolin|Playfair+Display:400,700,900,900i|Roboto+Mono|Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Import CSS Files -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
@@ -19,7 +21,7 @@
 
 <body>
     <header>
-        <nav role="navigation" class="yellow">
+        <nav role="navigation" class="blue">
             <div class="nav-wrapper container">
 
                 <!-- Logo -->
@@ -32,9 +34,6 @@
                     </li>
                     <li>
                         <a href="{{ url_for('about') }}">About +</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('projects') }}">Projects +</a>
                     </li>
                     <li>
                         <a href="{{ url_for('contact') }}">Contact +</a>
@@ -59,9 +58,6 @@
                         <a href="{{ url_for('about') }}">About +</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('projects') }}">Projects +</a>
-                    </li>
-                    <li>
                         <a href="{{ url_for('contact') }}">Contact +</a>
                     </li>
                 </ul>
@@ -74,7 +70,7 @@
         </nav>
     </header>
 
-    <main class="container layout-page">
+    <main class="container">
         {% block body %}
 
         {% endblock %}

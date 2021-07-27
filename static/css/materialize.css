@@ -3,6 +3,7 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
  .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -644,11 +645,11 @@
 }
 
 .blue {
-  background-color: #2196F3 !important;
+  background-color: #407AFF !important;
 }
 
 .blue-text {
-  color: #2196F3 !important;
+  color: #407AFF !important;
 }
 
 .blue.lighten-5 {
@@ -684,11 +685,11 @@
 }
 
 .blue.lighten-1 {
-  background-color: #42A5F5 !important;
+  background-color: #7BA1F7 !important;
 }
 
 .blue-text.text-lighten-1 {
-  color: #42A5F5 !important;
+  color: #7BA1F7 !important;
 }
 
 .blue.darken-1 {
@@ -2368,16 +2369,20 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
+p,
+li,
+a,
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family:  'Roboto Mono', monospace;
+    font-family: 'Lora', serif;
+  font-weight: 300;
   /* 1 */
   font-size: 100%;
   /* 1 */
-  line-height: 1.15;
+  line-height: 1.5
   /* 1 */
   margin: 0;
   /* 2 */
@@ -2593,7 +2598,9 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: 'Roboto Mono', monospace;
+    font-family: 'Lora', serif;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 ul:not(.browser-default) {
@@ -4292,7 +4299,7 @@ nav.nav-extended .nav-content {
 }
 
 nav a {
-  color: rgb(0, 0, 0, .8);
+  color: rgba(255, 255, 255);
 }
 
 nav i,
@@ -4330,11 +4337,12 @@ nav .sidenav-trigger i {
 
 nav .brand-logo {
   position: absolute;
-  color: rgb(0, 0, 0, .8);
+  color: rgb(255 255 255);
   display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
   padding: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 nav .brand-logo.center {
@@ -4400,7 +4408,7 @@ nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   font-size: 1rem;
-  color: rgb(0, 0, 0, .8);
+  color: rgb(255 255 255);
   display: block;
   padding: 0 15px;
   cursor: pointer;
@@ -4491,8 +4499,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: normal;
+  font-family: 'Playfair Display', serif;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -4530,9 +4537,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.56rem;
+  /* font-size: 1.56rem;
   line-height: 110%;
-  margin: 2.3733333333rem 0 1.424rem 0;
+  margin: 2.3733333333rem 0 1.424rem 0; */
+    font-size: 2.56rem;
+    line-height: 110%;
+    margin: 4rem 0 4rem 0;
 }
 
 h3 {

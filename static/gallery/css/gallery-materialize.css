@@ -1008,6 +1008,7 @@ nav .categories-wrapper .categories-container .categories > li {
 
 .gallery .gallery-item {
   margin-bottom: 1.5rem;
+  padding: 0;
 }
 
 .gallery .gallery-item .card {
@@ -1116,6 +1117,8 @@ nav .categories-wrapper .categories-container .categories > li {
   padding: 20px;
   background-color: #fff;
   color: #444;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .gallery .gallery-header h1, .gallery .gallery-header h2, .gallery .gallery-header h3, .gallery .gallery-header h4, .gallery .gallery-header h5 {

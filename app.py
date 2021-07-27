@@ -18,12 +18,6 @@ def about():
     return render_template("about.html"), 200
 
 
-# GET /projects
-@app.route('/projects')
-def projects():
-    return render_template("projects.html"), 200
-
-
 # GET /contact
 @app.route('/contact')
 def contact():

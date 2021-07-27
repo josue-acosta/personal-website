@@ -1,8 +1,8 @@
-/* Layout Page  ******************************/
-body {
-    background-image: url("/static/images/bg.png")
+main {
+    background-color: #fcfdfe;
 }
 
+/* Layout Page  ******************************/
 .layout-page {
     min-height: 100vh;
 }
@@ -10,13 +10,17 @@ body {
 
 
 /* Home Page  ******************************/
+.home-page .text-center {
+    text-align: center;
+}
+
 .hero-text{
-    padding-top: 5rem;
+    padding-top: 0;
     font-size: 3.7rem;
 }
 
 .tag-line-padding {
-    padding-top: 4rem;
+    padding-top: 0;
 }
 
 .tag-line {
@@ -24,9 +28,24 @@ body {
 }
 
 .yellow-highlighter {
-    background-color: #fff938;
+    background-color: #407AFF;
     padding: 5px; 
     display: inline-block;
+}
+
+.about-me-link {
+    margin: 0;
+    padding: 2rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+.link-hover:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 600px) {
@@ -34,9 +53,21 @@ body {
         font-size: 1.25rem;
     }
 
+    .tag-line-padding {
+        padding-top: 4rem;
+    }
+
     .hero-text{
         font-size: 4.2rem;
+        padding-top: 5rem;
     }
+  }
+
+
+  /* Case Study Section *********************/
+  .case-study-wrapper {
+      padding: 4rem;
+      background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
   }
 
 
@@ -94,11 +125,6 @@ body {
     padding: 2rem 2rem 0;
 }
 
-.work-page .text-center {
-    text-align: center;
-}
-
-
 
 /* Contact Page  ******************************/
 .contact-page {
@@ -132,4 +158,3 @@ body {
     margin-top: 1rem;
     display: inline-block;
 }
-
