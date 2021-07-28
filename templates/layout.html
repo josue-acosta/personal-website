@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>{% block title %}{% endblock %}</title>
 
-    <title>{% block title %}{% endblock %}</title>
+		<!-- Import Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- Import Google Fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+		<!-- Import CSS Files -->
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/main.css') }}"
+		/>
 
-    <!-- Import CSS Files -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
-</head>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="{{ url_for('static', filename='favicon.ico') }}"
+		/>
+	</head>
 
-<body>
-    <header>
-        <nav role="navigation" class="blue">
-            <div class="nav-wrapper container">
+	<body>
+		<div class="app">
+			<header>
+				<div class="header-container">
+					<div class="container">
+						<div
+							class="
+								header-section
+								d-flex
+								justify-content-between
+								align-items-center
+							"
+						>
+							<div class="header-logo">
+								<a href="{{ url_for('home') }}"
+									><img src="./assets/images/logo-light.png"
+								/></a>
+							</div>
+							<div class="header-menu">
+								<ul class="nav nav-light">
+									<li class="nav-item active">
+										<a class="nav-link" href="{{ url_for('home') }}">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{{ url_for('about') }}">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{{ url_for('contact') }}"
+											>About</a
+										>
+									</li>
+								</ul>
+								<div class="mobile-menu"><span></span><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
 
-                <!-- Logo -->
-                <a id="logo-container" href="{{ url_for('home') }}" class="brand-logo">Josué Acosta</a>
+			<div class="main-content landing">{% block body %} {% endblock %}</div>
 
-                <!-- Main Nav Bar -->
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="{{ url_for('home') }}">Home +</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('about') }}">About +</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('contact') }}">Contact +</a>
-                    </li>
-                </ul>
+			<footer>
+				<div class="footer-bg">
+					<div class="footer-pattern-bg"
+						><img
+							class="footer-pattern-bg__default"
+							src="https://paperpillar.com/assets/images/footer-pattern-bg.png" /><img
+							class="footer-pattern-bg__large"
+							src="https://paperpillar.com/assets/images/footer-pattern-bg-lg.png"
+					/></div>
+				</div>
+				<div class="footer-white-mask"
+					><img
+						class="footer-white-mask__default"
+						src="https://paperpillar.com/assets/images/footer-white-mask.png" /><img
+						class="footer-white-mask__large"
+						src="https://paperpillar.com/assets/images/footer-white-mask-lg.png"
+				/></div>
+				<div class="footer-container">
+					<div class="container">
+						<div class="footer-text text-center">
+							<p>Interested to work with us?</p>
+							<button
+								class="btn btn-primary btn-talk"
+								data-toggle="modal"
+								data-target="#contactModal"
+								>Let's talk!</button
+							>
+						</div>
+						<div class="footer-social">
+							<div class="social-container d-flex justify-content-center">
+								<div class="social-wrapper"
+									><a
+										href="https://www.instagram.com/paperpillar/"
+										target="_blank"
+										title="Instagram"
+										><i class="icon-pp-instagram"></i></a
+								></div>
+								<div class="social-wrapper"
+									><a
+										href="https://dribbble.com/paperpillar"
+										target="_blank"
+										title="Dribbble"
+										><i class="icon-pp-dribbble"></i></a
+								></div>
+								<div class="social-wrapper"
+									><a
+										href="https://www.behance.net/paperpillarstudio"
+										target="_blank"
+										title="Behance"
+										><i class="icon-pp-behance"></i></a
+								></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-                <!-- Mobile Nav Bar  -->
-                <ul id="nav-mobile" class="sidenav">
-                    <li>
-                        <div class="user-view">
-                            <div class="background">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlmtSvsJL7B9u0lVFoZNV94HEhyVUPj4X5gjJZ1C-j1SAY-A3">
-                            </div>
-                            <span class="name">Josué Acosta</span>
-                            <span style="unicode-bidi:bidi-override; direction: rtl;" class="email">moc.liamg@100yawslabinnaH</span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('home') }}">Home +</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('about') }}">About +</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('contact') }}">Contact +</a>
-                    </li>
-                </ul>
-
-                <!-- Mobile Nav Bar Icon -->
-                <a href="#" data-target="nav-mobile" class="right sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="container">
-        {% block body %}
-
-        {% endblock %}
-    </main>
-
-    <!-- Import JavaScript Files -->
-    <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/init.js') }}"></script>
-</body>
-
+		<!-- Import JavaScript Files -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	</body>
 </html>

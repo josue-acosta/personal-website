@@ -1,0 +1,28 @@
+{
+	"singleQuote": true,
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": "*.js",
+			"options": {
+				"semi": false,
+
+				"singleQuote": true,
+				"bracketSpacing": true,
+				"arrowParens:": "always"
+			}
+		},
+		{
+			"files": "*.html",
+			"options": {
+				"htmlWhitespaceSensitivity": "strict"
+			}
+		},
+		{
+			"files": "*.css",
+			"options": {
+				"bracketSpacing": true
+			}
+		}
+	]
+}
