@@ -1,238 +1,500 @@
 {% extends "layout.html" %} {% block title %}Home +{% endblock %} {% block body
 %}
-
-<section class="home-hero">
-	<div class="hero-bg">
-		<div class="hero-pattern-bg">
-			<img
-				class="hero-pattern-img__default"
-				src="https://paperpillar.com/assets/images/hero-pattern-bg.png"
-			/>
-		</div>
-	</div>
-
-	<div class="hero-character">
-		<div class="hero-guy-1">
-			<img
-				class="hero-guy-1__default"
-				src="https://paperpillar.com/assets/images/hero-guy-1.png"
-			/>
-			<img
-				class="hero-guy-1__large"
-				src="https://paperpillar.com/assets/images/hero-guy-1-lg.png"
-			/>
-		</div>
-	</div>
-
-	<div class="hero-overlay"></div>
-
-	<div class="hero-section">
-		<div class="hero-container">
-			<div class="hero-text">
-				<h1>I Am Josué&nbsp;Acosta</h1>
-				<p>A passionate web developer</p>
+<div class="main-content landing">
+	<section class="home-hero">
+		<div class="hero-bg">
+			<div class="hero-pattern-bg">
+				<img
+					class="hero-pattern-img__default"
+					src="https://paperpillar.com/assets/images/hero-pattern-bg.png"
+				/>
 			</div>
 		</div>
-	</div>
-</section>
 
-<section class="home-works">
-	<div class="container">
-		<div class="works-section">
-			<div class="section-title text-center">
-				<h2>Case Studies</h2>
+		<div class="hero-character">
+			<div class="hero-guy-1">
+				<img
+					class="hero-guy-1__default"
+					src="{{ url_for('static', filename='images/hero-background.png') }}"
+				/>
+				<img
+					class="hero-guy-1__large"
+					src="{{ url_for('static', filename='images/hero-background.png') }}"
+				/>
 			</div>
+		</div>
 
-			<div class="works-container">
-				<!-- case study: mi casa -->
-				<div class="work-list crisp-works">
-					<div class="work-wrapper d-flex">
-						<div class="work-description">
-							<div
-								class="work-detail d-flex flex-column justify-content-between"
-							>
-								<div>
-									<h3>Redesigning Crisp.im</h3>
-									<p>Illustration, Web Design</p>
-								</div>
-								<div>
-									<a
-										class="btn btn-work"
-										href="https://www.behance.net/gallery/50451725/Crisp"
-										target="_blank"
-										>View Project</a
-									>
-								</div>
-							</div>
-						</div>
-						<div
-							class="
-								work-image
-								d-flex
-								justify-content-center
-								align-items-center
-							"
-						>
-							<img
-								src="{{ url_for('static', filename='images/work-example.png') }}"
-							/>
-						</div>
-					</div>
-				</div>
+		<div class="hero-overlay"></div>
 
-				<!-- case study: mi casa -->
-				<div class="work-list lifecycle-works">
-					<div class="work-wrapper d-flex">
-						<div class="work-description">
-							<div
-								class="work-detail d-flex flex-column justify-content-between"
-							>
-								<div>
-									<h3>Beautiful Landing Page for Lifecycle</h3>
-									<p>Illustration, Web Design</p>
-								</div>
-								<div>
-									<a
-										class="btn btn-work"
-										href="https://www.behance.net/gallery/52119809/Lifecycle"
-										target="_blank"
-										>View Project</a
-									>
-								</div>
-							</div>
-						</div>
-						<div
-							class="
-								work-image
-								d-flex
-								justify-content-center
-								align-items-center
-							"
-						>
-							<img
-								src="{{ url_for('static', filename='images/work-example.png') }}"
-							/>
-						</div>
-					</div>
-				</div>
-
-				<!-- case study: westside strength and conditioning -->
-				<div class="work-list crisp-works">
-					<div class="work-wrapper d-flex">
-						<div class="work-description">
-							<div
-								class="work-detail d-flex flex-column justify-content-between"
-							>
-								<div>
-									<h3>Redesigning Crisp.im</h3>
-									<p>Illustration, Web Design</p>
-								</div>
-								<div>
-									<a
-										class="btn btn-work"
-										href="https://www.behance.net/gallery/50451725/Crisp"
-										target="_blank"
-										>View Project</a
-									>
-								</div>
-							</div>
-						</div>
-						<div
-							class="
-								work-image
-								d-flex
-								justify-content-center
-								align-items-center
-							"
-						>
-							<img
-								src="{{ url_for('static', filename='images/work-example.png') }}"
-							/>
-						</div>
-					</div>
+		<div class="hero-section">
+			<div class="hero-container">
+				<div class="hero-text">
+					<h1>I Am Josué&nbsp;Acosta</h1>
+					<p>A web developer with passion</p>
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Mi Systema Web App</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<p
+				>Mi Casa Cake Shop is a storefront bakery owned by an entrepreneurial
+				Latina. It has been serving the Hispanic community for the past 20 years
+				and sees no plan in stopping</p
+			>
+
+			<span class="h6">About the Project</span>
+			<p
+				>Mi Casa Cake Shop recently opened its first storefront. More phone
+				calls, messages, and walk-ins rolled in than ever before. They quickly
+				saw the need to consolidate and systematize her order-taking
+				procedure.</p
+			>
+
+			<p
+				>Mi Casa came to me with their problem. I understood her issue when it
+				came to workflow and technical limitations so it seemed I would be a
+				great fit. We collaborate and found out we needed to centralize her
+				conversations to one device and one application, simplify her cake
+				orders, and track and visualize her progress.</p
+			>
+
+			<span class="h6">How I Made It</span>
+			<p
+				>The project's north star was categorizing all of the incoming requests
+				and integrating them into the workflow.</p
+			>
+
+			<p
+				>I first created a paper order form for all the details they needed for
+				the cake order. Then I created two online versions: One we use to create
+				orders internally and a second one on our website where the public can
+				place an order online. Mi Casa can print online orders onto the exact
+				order form as the paper version. They use the printed order forms on a
+				large Kanban wall where the progress is monitored and visualized.</p
+			>
+
+			<p
+				>Lastly, I consolidated text messages, Facebook's Messenger, and
+				Instagram's Direct Messages into one location.</p
+			>
+
+			<p
+				>As a result of working with Mi Casa, they've seen and felt the ease of
+				taking orders. Seamless workflow integration was the driving force in
+				creating the web app.</p
+			>
+			<span class="h6">Services</span>
+			<ul>
+				<li>Created multi-media cake order form</li>
+				<li>Established a Kanban system</li>
+				<li>Internal and External Online Orders Forms</li>
+				<li>Multi-channel Conversation Manager</li>
+				<li>
+					<a
+						href="https://www.josue-acosta.app/dashboard/channels"
+						target="_blank"
+						class="collection-item"
+						>Vist the Demo <i class="tiny material-icons">open_in_new</i></a
+					>
+				</li>
+			</ul>
+		</div>
 	</div>
-</section>
 
-<section class="home-services">
-	<div class="container">
-		<div class="services-section">
-			<div class="section-title text-center">
-				<h2>Project Based Skills</h2>
-			</div>
+	<div class="modal" id="modalMiCasa">
+		<div class="modal-header">
+			<div class="title">Mi Casa Cake Shop</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<p
+				>Mi Casa Cake Shop is a storefront bakery owned by an entrepreneurial
+				Latina. It has been serving the Hispanic community for the past 20 years
+				and sees no plan in stopping</p
+			>
 
-			<div class="services-container">
-				<div class="row justify-content-center">
-					<!-- project based skills: insurance auto auction -->
-					<div class="col-sm-4 col-12">
-						<div class="blog-item item">
-							<div class="blog-image"
-								><img
-									class="img-fluid"
-									alt="Blog image"
-									src="https://cdn-images-1.medium.com/max/1024/1*WXwmbNZH3AY3NZQqf9240w.png"
-							/></div>
+			<span class="h6">About the Project</span>
+			<p
+				>Mi Casa Cake Shop didn't have a Business ID but heard how powerful it
+				can be. She knew having a consistent design throughout her business
+				gains customer trust and recognition. But what she didn't know was what
+				message she wanted to send and how.</p
+			>
 
-							<div class="blog-description">
-								<a
-									target="_blank"
-									href="https://medium.com/paperpillar/cinema-app-case-study-f69b590d98a3?source=rss----7f66ea7bde2a---4"
-									class="blog-title"
-									>Movie Ticket App Case Study</a
+			<p
+				>Mi Casa came to me with her problem and I understood her issue when it
+				came to design and language barrier so it seemed I would be a great fit.
+				We collaborate and found out that a logo, business cards, building sign,
+				and a website would solve her issues of not being identified,
+				introducing herself, having her storefront found, and having an online
+				presence.</p
+			>
+
+			<span class="h6">How I Made It</span>
+			<p
+				>The project's north star was the warmth and hospitality of the Hispanic
+				culture. The logo's colors reflect the bright and vibrant Latin tile
+				used in home decoration. This carries to her business cards which make a
+				great first impression.</p
+			>
+
+			<p
+				>As a result of working with Mi Casa's they've seen the true spirit of
+				bringing every business to the market. Proper translation was a driving
+				force in creating her website. Every page is available to her customer's
+				native language—English and Spanish. With love and attention, you'll
+				feel at home at Mi Casa.</p
+			>
+			<span class="h6">Services</span>
+			<ul>
+				<li>Logo</li>
+				<li>
+					<a
+						href="https://micasacakeshop.com/"
+						target="_blank"
+						class="collection-item"
+						>Website <i class="tiny material-icons">open_in_new</i></a
+					>
+				</li>
+				<li>Now Open Flyer</li>
+				<li>Window Singage</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="modalWSC">
+		<div class="modal-header">
+			<div class="title">WestSide Strength &amp; Conditioning</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<p
+				>Westside Strength &amp; Conditioning is the strongest group training
+				gym in the city. Owned by long-time personal trainer and fitness
+				instructor Calvin Ridlen, you get all the intensity with none of the
+				injuries.</p
+			>
+
+			<span class="h6">About the Project</span>
+			<p
+				>Westside Strength &amp; Conditioning didn't have a Business ID but
+				heard how powerful it can be. He knew having consistent design
+				throughout his business gains customer trust and recognition. But what
+				he didn't know was what message he wanted to send and how.</p
+			>
+
+			<p
+				>WSC came to me with his problem and I understood his issue when it came
+				to having a big-picture design of his and so it seemed I would be a
+				great fit. We collaborate and found out that a website and emails would
+				solve his issue of promoting fitness challenges, initiating personal
+				training, having his storefront found, and having an online presence.</p
+			>
+
+			<span class="h6">How I Made It</span>
+			<p
+				>The project's north star was the supportive energy of WSC's Fit Family
+				culture. The gym's bright blue reflects encouragement and the vibrant
+				green, explosive exercises. This carries to his website which makes a
+				great first impression by laying his company colors on a cool, hard,
+				concrete backdrop</p
+			>
+
+			<p
+				>As a result of working with WSC's they've seen the true spirit of
+				bringing every business to the market. Proper SEO was a driving force in
+				creating his website. The single page layout was designed to keep the
+				visitor on the web page while providing them with the content they need.
+				With his gentle&mdash;yet authoritative&mdash;voice echoing in the
+				emails, members get the same instruction on how to better themselves
+				outside the gym</p
+			>
+			<span class="h6">Services</span>
+			<ul>
+				<li>Website</li>
+				<li>Search Engine Optimization</li>
+				<li>Email Campaign</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="modalBuyersFee">
+		<div class="modal-header">
+			<div class="title">Buyer's Fee Calculator</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<span class="h6">Problem</span>
+			<p
+				>Patrons would ask for an sum total of vehicles they bought or placed
+				bids; it had to be done maually.</p
+			>
+
+			<span class="h6">Solution</span>
+			<p
+				>I created web app in JavaScript to calculate total price of cars for
+				the after-auction rush which reduced the time we spent answering common
+				pricing questions by 40%.</p
+			>
+
+			<a
+				href="https://www.figma.com/file/lYgRxY6EA1IYwvbmYxGwDQ/buyers-fee?node-id=0%3A1"
+				target="_blank"
+				>View Screenshot <i class="tiny material-icons">open_in_new</i></a
+			>
+
+			<span class="h6">Techology</span>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+				<li>jQuery</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="modalQuestionnaire">
+		<div class="modal-header">
+			<div class="title">Returning Workers' Questionnaire</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<span class="h6">Problem</span>
+			<p
+				>We needed a way for candidates to fill out an online form but the
+				majority had limited computer literacy skills and internet access. They
+				where, however, familiar with using smartphones.</p
+			>
+
+			<span class="h6">Solution</span>
+			<p
+				>We decided to work with their strengths and designed a lightweight,
+				mobile-friendly online questionnaire. The form was built to accommodate
+				for poor cell phone reception and small screens while still being
+				intuitive.</p
+			>
+
+			<span class="h6">Techology</span>
+			<ul>
+				<li>Ruby</li>
+				<li>Ruby on Rails</li>
+				<li>Foundation CSS</li>
+				<li>JavaScript</li>
+				<li>MongoDB</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="modalPlayOrPay">
+		<div class="modal-header">
+			<div class="title">Play or Pay Contest</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<span class="h6">Services</span>
+			<p
+				>Orchestrated the promotion of a contest through email, a landing page
+				and in-person conversations. 20% of trial members signed up for
+				full-time membership.</p
+			>
+
+			<a href="http://unbouncepages.com/demo-102088/" target="_blank"
+				>View Landing Page <i class="tiny material-icons">open_in_new</i></a
+			>
+		</div>
+	</div>
+
+	<div id="overlay"></div>
+
+	<section class="home-works">
+		<div class="container">
+			<div class="works-section">
+				<div class="section-title text-center">
+					<h2>Case Studies</h2>
+				</div>
+
+				<div class="works-container">
+					<!-- case study: mi casa -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper d-flex">
+							<div class="work-description">
+								<div
+									class="work-detail d-flex flex-column justify-content-between"
 								>
+									<div>
+										<h3>Mi Systema App</h3>
+										<p>Web App</p>
+									</div>
+									<div>
+										<button data-modal-target="#modal" class="btn btn-work"
+											>View Details</button
+										>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-
-					<!-- project based skills: returning workers' Questionnaire -->
-					<div class="col-sm-4 col-12">
-						<div class="blog-item item">
-							<div class="blog-image">
+							<div
+								class="
+									work-image
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+							>
 								<img
-									class="img-fluid"
-									alt="Blog image"
-									src="https://cdn-images-1.medium.com/max/1024/1*WXwmbNZH3AY3NZQqf9240w.png"
+									src="{{ url_for('static', filename='images/mi-systema-pillar.png') }}"
 								/>
 							</div>
+						</div>
+					</div>
 
-							<div class="blog-description">
-								<a
-									target="_blank"
-									href="https://medium.com/paperpillar/cinema-app-case-study-f69b590d98a3?source=rss----7f66ea7bde2a---4"
-									class="blog-title"
-									>Movie Ticket App Case Study</a
+					<!-- case study: mi casa -->
+					<div class="work-list lifecycle-works">
+						<div class="work-wrapper d-flex">
+							<div class="work-description">
+								<div
+									class="work-detail d-flex flex-column justify-content-between"
 								>
+									<div>
+										<h3>Mi Casa Cake Shop</h3>
+										<p>Web Design, Illustraction</p>
+									</div>
+									<div>
+										<button
+											data-modal-target="#modalMiCasa"
+											class="btn btn-work"
+											>View Details</button
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									work-image
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+							>
+								<img
+									src="{{ url_for('static', filename='images/mi-casa-pillar.png') }}"
+								/>
 							</div>
 						</div>
 					</div>
 
-					<!-- project based skills: play or pay contest -->
-					<div class="col-sm-4 col-12">
-						<div class="blog-item item">
-							<div class="blog-image">
-								<img
-									class="img-fluid"
-									alt="Blog image"
-									src="https://cdn-images-1.medium.com/max/1024/1*WXwmbNZH3AY3NZQqf9240w.png"
-								/>
-							</div>
-
-							<div class="blog-description">
-								<a
-									target="_blank"
-									href="https://medium.com/paperpillar/cinema-app-case-study-f69b590d98a3?source=rss----7f66ea7bde2a---4"
-									class="blog-title"
-									>Movie Ticket App Case Study</a
+					<!-- case study: westside strength and conditioning -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper d-flex">
+							<div class="work-description">
+								<div
+									class="work-detail d-flex flex-column justify-content-between"
 								>
+									<div>
+										<h3>Westside Strength &amp; Conditioning</h3>
+										<p>Web Design, Email Campange</p>
+									</div>
+									<div>
+										<button data-modal-target="#modalWSC" class="btn btn-work"
+											>View Details</button
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									work-image
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+							>
+								<img
+									src="{{ url_for('static', filename='images/wsc-pillar.png') }}"
+								/>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
+	<section class="home-services">
+		<div class="container">
+			<div class="services-section">
+				<div class="section-title text-center">
+					<h2>Project Based Skills</h2>
+				</div>
+
+				<div class="services-container">
+					<div class="row justify-content-center">
+						<!-- project based skills: insurance auto auction -->
+						<div class="col-sm-4 col-12">
+							<div class="blog-item item" data-modal-target="#modalBuyersFee">
+								<div class="blog-image"
+									><img
+										class="img-fluid"
+										alt="Blog image"
+										src="{{ url_for('static', filename='images/project-iaa-calculator.png')}}"
+								/></div>
+
+								<div class="blog-description">
+									<div class="blog-title">Buyer's Fee Calculator</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- project based skills: returning workers' Questionnaire -->
+						<div class="col-sm-4 col-12">
+							<div
+								class="blog-item item"
+								data-modal-target="#modalQuestionnaire"
+							>
+								<div class="blog-image">
+									<img
+										class="img-fluid"
+										alt="Blog image"
+										src="{{url_for('static', filename='images/project-questionnaire.png')}}"
+									/>
+								</div>
+
+								<div class="blog-description">
+									<div class="blog-title">Returning Workers' Questionnaire</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- project based skills: play or pay contest -->
+						<div class="col-sm-4 col-12">
+							<div class="blog-item item" data-modal-target="#modalPlayOrPay">
+								<div class="blog-image">
+									<img
+										class="img-fluid"
+										alt="Blog image"
+										src="{{ url_for('static', filename='images/project-pay-or-play.png')}}"
+									/>
+								</div>
+
+								<div class="blog-description">
+									<div class="blog-title">Play or Pay Contest</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %} {% block footer %}
+<p>Interested in learning more?</p>
+<a class="link-talk" href="{{ url_for('about') }}">
+	<button class="btn btn-primary btn-talk">About Me</button>
+</a>
 {% endblock %}

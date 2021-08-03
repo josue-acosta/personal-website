@@ -1,55 +1,125 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block title %}Contact +{% endblock %} {% block
+body %}
+<div class="main-content blog">
+	<section class="blog-hero">
+		<div class="blog-hero-section">
+			<div class="blog-hero-bg">
+				<div class="contact-bg-rear"></div>
+				<div class="blog-bg-front"
+					><img
+						class="blog-bg-front__default"
+						src="https://paperpillar.com/assets/images/blog-pattern-bg.png" /><img
+						class="blog-bg-front__large"
+						src="https://paperpillar.com/assets/images/blog-pattern-bg-lg.png"
+				/></div>
+			</div>
+			<div class="blog-hero-overlay"></div>
+			<div class="blog-hero-mask">
+				<div class="blog-white-mask"
+					><img
+						class="blog-white-mask__default"
+						src="https://paperpillar.com/assets/images/blog-white-mask.png" /><img
+						class="blog-white-mask__large"
+						src="https://paperpillar.com/assets/images/blog-white-mask-lg.png"
+				/></div>
+			</div>
+			<div class="blog-hero-text">
+				<div class="container">
+					<h1>Contact Me</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 
-{% block title %}Contact +{% endblock %}
+	<section class="home-works">
+		<div class="container">
+			<div class="works-section">
+				<div class="works-container">
+					<!-- summary -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-detail">
+									<div>
+										<h3>Contact Information</h3>
+										<p
+											><span style="unicode-bidi: bidi-override; direction: rtl"
+												>moc.liamg@100yawslabinnaH</span
+											>
+										</p>
+										<p>
+											<span style="unicode-bidi: bidi-override; direction: rtl"
+												>5263-223-515</span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-{% block body %}
+					<!-- summary -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-detail">
+									<div>
+										<h3 class="contact-social-title">Social Accounts</h3>
+										<div class="row">
+											<div class="col-sm-4 col-6 text-center social-media-link">
+												<a href="https://github.com/josue-acosta">
+													<img
+														class="responsive-img"
+														alt="github"
+														src="{{ url_for('static', filename='images/github-01.png') }}"
+													/>
+													<div class="text-center">
+														<p>GitHub</p>
+													</div>
+												</a>
+											</div>
 
-<div>
-    <div>
-        <div>
-            <div>
-                <h2>Contact Information</h2>
-                <div>
-                    <div>
-                        <p><span style="unicode-bidi:bidi-override; direction: rtl;">moc.liamg@100yawslabinnaH</span>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span style="unicode-bidi:bidi-override; direction: rtl;">5263-223-515</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+											<div class="col-sm-4 col-6 text-center social-media-link">
+												<a href="https://www.linkedin.com/in/josueacosta/">
+													<img
+														class="responsive-img"
+														alt="linkedin"
+														src="{{ url_for('static', filename='images/linkedin.png') }}"
+													/>
+													<div class="text-center">
+														<p>LinkedIn</p>
+													</div>
+												</a>
+											</div>
 
-        <div>
-            <div>
-                <h2>Social Accounts</h2>
-                <div>
-                    <div>
-                        <a href="https://github.com/josue-acosta">
-                            <img alt="github" src="{{ url_for('static', filename='images/github-01.png') }}" class="responsive-img left">
-                            <p>GitHub</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/josueacosta/">
-                            <img alt="linkedin" src="{{ url_for('static', filename='images/linkedin.png') }}">
-                            <p>LinkedIn</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/ja_alejandre">
-                            <img alt="twitter" src="{{ url_for('static', filename='images/twitter.png') }}">
-                            <p>Twitter</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+											<div class="col-sm-4 col-6 text-center social-media-link">
+												<a href="https://twitter.com/ja_alejandre">
+													<img
+														class="responsive-img"
+														alt="twitter"
+														src="{{ url_for('static', filename='images/twitter.png') }}"
+													/>
+													<div class="text-center">
+														<p>Twitter</p>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
+<!-- main-content end -->
 
+{% endblock %} {% block footer %}
+<p>Want to connect?</p>
+<a class="link-talk" href="{{ url_for('contact') }}">
+	<button class="btn btn-primary btn-talk">Contact Me</button>
+</a>
 {% endblock %}

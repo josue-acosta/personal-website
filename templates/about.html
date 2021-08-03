@@ -1,341 +1,652 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block title %}About +{% endblock %} {% block body
+%}
+<div class="main-content blog">
+	<section class="blog-hero">
+		<div class="blog-hero-section">
+			<div class="blog-hero-bg">
+				<div class="blog-bg-rear"></div>
+				<div class="blog-bg-front"
+					><img
+						class="blog-bg-front__default"
+						src="https://paperpillar.com/assets/images/blog-pattern-bg.png" /><img
+						class="blog-bg-front__large"
+						src="https://paperpillar.com/assets/images/blog-pattern-bg-lg.png"
+				/></div>
+			</div>
+			<div class="blog-hero-overlay"></div>
+			<div class="blog-hero-mask">
+				<div class="blog-white-mask"
+					><img
+						class="blog-white-mask__default"
+						src="https://paperpillar.com/assets/images/blog-white-mask.png" /><img
+						class="blog-white-mask__large"
+						src="https://paperpillar.com/assets/images/blog-white-mask-lg.png"
+				/></div>
+			</div>
+			<div class="blog-hero-text">
+				<div class="container">
+					<h1>About Me</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 
-{% block title %}About +{% endblock %}
+	<section class="home-works">
+		<div class="container">
+			<div class="works-section">
+				<div class="works-container">
+					<!-- summary -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-detail">
+									<div>
+										<h3>Summary</h3>
+										<p
+											>I'm a full-deck web developer with an entrepreneurial
+											spirit. An endless passion for new technology and finding
+											efficiencies is the driving force behind every project I
+											approach. It's been said that I have a relentless pursuit
+											of knowledge.</p
+										>
 
-{% block body %}
+										<p
+											>With a Midwestern work ethic and eternally positive
+											attitude, I'm a result-driven professional dedicated to
+											working with a growing team to bring creativity,
+											innovation, and fresh ideas while cultivating a fun,
+											long-lasting relationship.</p
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-<div>
+					<!-- work experience: mi casa cake shop -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">Mi Casa Cake Shop</span
+									><span class="work-experience-position">
+										| Business Manager</span
+									>
+									<ul class="work-experience-list">
+										<li>
+											Managed business operations in a fast-paced, multi-project
+											orientated environment
+										</li>
+										<li>
+											Reduced monthly card processing fees by 67% by extensively
+											researching merchant processors for the Point of Sales
+											system
+										</li>
+										<li>
+											Enhance existing systems by analyzing business objectives,
+											preparing an action plan, and identifying areas for
+											modification and improvement
+										</li>
+										<li>
+											Reduced the time to complete a cake order by establishing
+											a Kanban system to achieve the ability to track the
+											progress of the cake
+										</li>
+									</ul>
+									<div>
+										<p class="font-weight-bold"
+											>2020 - Present | Des Moines, IA</p
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <div>
-        <div>
-            <h1>About Me</h1>
+					<!-- work experience: principal financial group -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title"
+										>Principal Financial Group</span
+									><span class="work-experience-position">
+										| Software Engineer</span
+									>
+									<ul class="work-experience-list">
+										<li>
+											Software Engineer with React and Spring Framework focus
+										</li>
+										<li>
+											Updated Principal's Onboarding website by converting
+											existing CSS and jQuery rules to be mobile-friendly to
+											achieve a seamless experience for both desktop and mobile
+											devices
+										</li>
+										<li>
+											Solved business problems as part of a scrum team to
+											deliver innovative solutions and provide ongoing support
+										</li>
+										<li>
+											Ran Jenkins Pipelines on specific GIT branches to build,
+											test, and deploy changes to the website
+										</li>
+										<li>
+											Collaborated with architectural engineers, technical
+											engineers, and other roles on application design and
+											architecture
+										</li>
+										<li>
+											Followed best practices as laid out by the team to ensure
+											accessibility, application performance, and online
+											security
+										</li>
+									</ul>
+									<div>
+										<p class="font-weight-bold"
+											>November 2019 - September 2020 | Des Moines, IA</p
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-            <div>
-                <p>I'm a full-deck web developer with an entrepreneurial spirit. An endless passion for new technology
-                    and finding efficiencies is the driving force behind every project I approach. It's been said that I
-                    have a relentless pursuit of knowledge.</p>
+					<!-- work experience: the stelter group -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">The Stelter Group</span
+									><span class="work-experience-position">
+										| eMarketing Specialist</span
+									>
+									<ul class="work-experience-list">
+										<li>
+											Developed 12 email templates using HTML5 and CSS3 to be
+											used in Salesforce's Marketing Cloud
+										</li>
+										<li>
+											Led email design meetings in conjunction with the art
+											department to design the email using a mobile-ﬁrst
+											approach
+										</li>
+										<li>
+											Approached the email build process with graceful
+											degradation methodology and ran updates through the
+											progressive enhancement mindset
+										</li>
+										<li>
+											Made building new emails easier by creating segments of
+											the email layout into self-contained blocks of code to
+											practice modular programming
+										</li>
+										<li>
+											Communicated any delays, missing assets, email change
+											conﬂicts with the Customer Success Manager through email,
+											project management software, instant messenger app, and
+											daily conversations
+										</li>
+										<li>
+											Spearheaded the development of a new building method
+											leveraging AMPScript which cut email build time up to 60%
+										</li>
+										<li>
+											Saved time building recurring emails by using functions
+											that take variable sets in the email and join them with a
+											set of other variables pulled from the Salesforce database
+											to automatically populate the content of the email
+										</li>
+										<li>
+											Build emails from Adobe XD and Adobe Photoshop mockups
+										</li>
+									</ul>
+									<div>
+										<p class="font-weight-bold"
+											>August 2016 - November 2019 | Urbandale, IA</p
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                <p>With a Midwestern work ethic and eternally positive attitude, I'm a result-driven professional
-                    dedicated to working with a growing team to bring creativity, innovation, and fresh ideas while
-                    cultivating a fun, long-lasting relationship.</p>
-            </div>
-        </div>
-    </div>
+					<!-- work experience: the bernard firm -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">The Bernard Firm</span
+									><span class="work-experience-position">
+										| IT Specialist / Web Developer</span
+									>
+									<ul class="work-experience-list">
+										<li>
+											Formalized the procedure of submitting reoccurring H2-A
+											visa applications
+										</li>
+										<li>
+											Built a Customer Relationship Management (CRM) using Ruby
+											on Rails
+										</li>
+										<li>
+											Save time by providing the ﬁrm with centralized access to
+											the employee's previous applications, identiﬁcation
+											documents, and personal information to achieve a decreased
+											ﬁling time of recurring H2-A visa applicants by 42%
+										</li>
+									</ul>
+									<div>
+										<p class="font-weight-bold">2015 - 2016 | Ames, IA</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <div>
-        <div>
-            <h1>Work Experience</h1>
+					<!-- work experience: insurance auto auction -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title"
+										>Insurance Auto Auction</span
+									><span class="work-experience-position">
+										| Customer Service Representative</span
+									>
+									<ul class="work-experience-list">
+										<li>
+											As a Customer Service Representative, I forged a lasting
+											relationship with the Spanish speaking community by
+											improving the buyer's experience. I aimed to improve all
+											of our customer's experience by looking at multiple touch
+											points to see where in the auction lifecycle we can ease
+											any tension. Examples are; streamlining the vehicle
+											consignment process, managing big buyers' titles, created
+											examples of how to fill out common forms like money orders
+											and vehicle titles.
+										</li>
+										<li>
+											That extended to my team members by seeing the opportunity
+											to answer the common question of how much a vehicle would
+											cost if they won it a certain amount by creating a web app
+											in plain JavaScript that calculated the cost for us.
+										</li>
+									</ul>
+									<div>
+										<p class="font-weight-bold">2014 - 2015 | Waukee, IA</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-            <div>
-                <div>
+	<section class="home-works">
+		<div class="container">
+			<div class="works-section">
+				<div class="section-title text-center about-section-title">
+					<h2>Education</h2>
+				</div>
 
-                    <span>Mi Casa Cake Shop</span><span> | Business Manager</span>
-                    <ul>
-                        <li>
-                            Managed business operations in a fast-paced, multi-project orientated environment
-                        </li>
-                        <li>
-                            Reduced monthly card processing fees by 67% by extensively researching merchant processors for the Point of Sales system
-                        </li>
-                        <li>
-                            Enhance existing systems by analyzing business objectives, preparing an action plan, and identifying areas for modification and improvement
-                        </li>
-                        <li>
-                            Reduced the time to complete a cake order by establishing a Kanban system to achieve the ability to track the progress of the cake
-                        </li>
-                    </ul>
-                    <div>
-                        <p>September 2020 - Present | Des Moines, IA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<!-- education -->
+				<div class="works-container">
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-detail">
+									<span class="work-experience-title">High School Diploma</span>
+									<br />
+									<span class="work-experience-position"
+										>Abraham Lincoln High School</span
+									>
+									<p class="font-weight-bold">Des Moines, IA</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <div>
-        <div>
-            <div>
-                <div>
+					<!-- continued education: treehouse -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">Treehouse</span>
+									<ul class="work-experience-list">
+										<li> Web Design</li>
+										<li> Front End Web Development</li>
+										<li> Full Stack JavaScript</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <span>Principal Financial Group</span><span> | Software Engineer</span>
+					<!-- continued education: edX -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">edX</span>
+									<ul class="work-experience-list">
+										<li> CS50 Introduction to Computer Science </li>
+										<li>
+											Introduction to Computer Science and Programming Using
+											Python
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <ul>
-                        <li>
-                            Software Engineer with a Front End focus
-                        </li>
-                        <li>
-                            Updated Principal's Onboarding website by converting existing web pages to be mobile-friendly to achieve a seamless experience for both desktop and mobile devices
-                        </li>
-                        <li>
-                            Solved business problems as part of a scrum team to deliver innovative solutions and provide ongoing support
-                        </li>
-                        <li>
-                            Collaborated with architectural engineers, technical engineers, and other roles on application design and architecture
-                        </li>
-                        <li>
-                            Followed best practices as laid out by the team to ensure accessibility, application performance, and online security
-                        </li>
-                    </ul>
-                    <div>
-                        <p>November 2019 - September 2020 | Des Moines, IA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<!-- continued education: coursera -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">Coursera</span>
+									<ul class="work-experience-list">
+										<li>Computer Science 101</li>
+										<li>Introduction to HTML5</li>
+										<li>Introduction to CSS3</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <div>
-        <div>
-            <div>
-                <div>
+					<!-- continued education: udemy -->
+					<div class="work-list crisp-works">
+						<div class="work-wrapper">
+							<div class="work-description about-description">
+								<div class="work-experience-detail">
+									<span class="work-experience-title">Udemy</span>
+									<ul class="work-experience-list">
+										<li>Intro to Storytelling: Wow Your Crowd</li>
+										<li
+											>Create Amazing Responsive Email with Foundation for
+											Emails 2</li
+										>
+										<li>Google Analytics For Beginners (Step by Step)</li>
+										<li
+											>MERN Stack Front To Back: Full Stack React, Redux &amp;
+											Node.js</li
+										>
+										<li>Modern React with Redux [2019 Update]</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                    <span>Stelter Company</span><span> |&nbsp;eMarketing
-                        Specialist</span>
+	<section class="home-works">
+		<div class="container">
+			<div class="works-section">
+				<div class="section-title text-center about-section-title">
+					<h2>Skills</h2>
+				</div>
 
-                    <ul>
-                        <li>
-                            Developed 12 email templates using HTML5 and CSS3 to be used in Salesforce's Marketing Cloud
-                        </li>
-                        <li>
-                            Led email design meetings in conjunction with the art department to design the email using a mobile-ﬁrst approach
-                        </li>
-                        <li>
-                            Approached the email build process with graceful degradation methodology and ran updates through the progressive enhancement mindset
-                        </li>
-                        <li>
-                            Made building new emails easier by creating segments of the email layout into self-contained blocks of code to practice modular programming
-                        </li>
-                        <li>
-                            Communicated any delays, missing assets, email change conﬂicts with the Customer Success Manager through email, project management software, instant messenger app, and daily conversations
-                        </li>
-                        <li>
-                            Spearheaded the development of a new building method leveraging AMPScript which cut email build time up to 60%
-                        </li>
-                        <li>
-                            Saved time building recurring emails by using functions that take variable sets in the email and join them with a set of other variables pulled from the Salesforce database to automatically populate the content of the email
-                        </li>
-                    </ul>
-                    <div>
-                        <p>August 2016 - November 2019 | Urbandale, IA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="card">
+					<h3 class="skill-title">HTML</h3>
+					<div class="row">
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/html5.png') }}"
+							/>
+							<div class="text-center">
+								<p>HTML5</p>
+							</div>
+						</div>
 
-    <div>
-        <div>
-            <div>
-                <div>
-                    <span>The Bernard Firm</span><span> |&nbsp;IT&nbsp;Specialist / Web Developer</span>
-                    <ul>
-                        <li>
-                            Formalized the procedure of submitting reoccurring H2-A visa applications
-                        </li>
-                        <li>
-                            Built a Customer Relationship Management (CRM) using Ruby on Rails
-                        </li>
-                        <li>
-                            Save time by providing the ﬁrm with centralized access to the employee's previous applications, identiﬁcation documents, and personal information to achieve a decreased ﬁling time of recurring H2-A visa applicants by 42%
-                        </li>
-                    </ul>
-                    <div>
-                        <p>2015 - 2016 | Ames, IA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/react.png') }}"
+							/>
+							<div class="text-center">
+								<p>JSX</p>
+							</div>
+						</div>
 
-    <div>
-        <div>
-            <div>
-                <div>
-                    <span>Insurance Auto Auction</span><span> |
-                        Customer&nbsp;Service&nbsp;Representative</span>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/jinja2.png') }}"
+							/>
+							<div class="text-center">
+								<p>Jinja2</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    <p>As a Customer Service Representative, I forged a lasting relationship with the Spanish speaking
-                        community by improving the buyer's experience. I aimed to improve all of our customer's
-                        experience by looking at multiple touch points to see where in the auction lifecycle we can ease
-                        any tension. Examples are; streamlining the vehicle consignment process, managing big buyers'
-                        titles, created examples of how to fill out common forms like money orders and vehicle titles.
-                    </p>
-                    <p>That extended to my team members by seeing the opportunity to answer the common question of how
-                        much a vehicle would cost if they won it a certain amount by creating a web app in plain
-                        JavaScript that calculated the cost for us.</p>
-                    <div>
-                        <p>2014 - 2015 | Waukee, IA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="card">
+					<h3 class="skill-title">CSS</h3>
+					<div class="row">
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/css3.png') }}"
+							/>
+							<div class="text-center">
+								<p>CSS3</p>
+							</div>
+						</div>
 
-    <div>
-        <div>
-            <h1>Education</h1>
-            <div>
-                <div>
-                    <span>Abraham Lincoln High School</span><span> | Des Moines,
-                        IA</span>
-                    <ul>
-                        <li>High School Diploma</li>
-                    </ul>
-                </div>
-            </div>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/foundation.png') }}"
+							/>
+							<div class="text-center">
+								<p>Foundation</p>
+							</div>
+						</div>
 
-            <h2>Continuing Education</h2>
-            <div>
-                <div>
-                    <a href="https://teamtreehouse.com/about">
-                        <span>Treehouse <i>open_in_new</i></span>
-                    </a>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/materialize.png') }}"
+							/>
+							<div class="text-center">
+								<p>Materialize</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    <ul>
-                        <li>Web Design</li>
-                        <li>Front End Web Development</li>
-                        <li>Full Stack JavaScript</li>
-                    </ul>
-                </div>
-            </div>
+				<div class="card">
+					<h3 class="skill-title">Javascript</h3>
+					<div class="row">
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/javascript.png') }}"
+							/>
+							<div class="text-center">
+								<p>JavaScript</p>
+							</div>
+						</div>
 
-            <div>
-                <div>
-                    <a href="https://www.edx.org/">
-                        <span>edX <i>open_in_new</i></span>
-                    </a>
-                    <ul>
-                        <li>CS50 Introduction to Computer Science</li>
-                        <li>Introduction to Computer Science and Programming Using Python</li>
-                    </ul>
-                </div>
-            </div>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/react.png') }}"
+							/>
+							<div class="text-center">
+								<p>React</p>
+							</div>
+						</div>
 
-            <div>
-                <div>
-                    <a href="https://blog.coursera.org/about/">
-                        <span>Coursera <i>open_in_new</i></span>
-                    </a>
-                    <ul>
-                        <li>Computer Science 101</li>
-                        <li>Introduction to HTML5</li>
-                        <li>Introduction to CSS3</li>
-                    </ul>
-                </div>
-            </div>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/material-ui-logo.png') }}"
+							/>
+							<div class="text-center">
+								<p>Material-UI</p>
+							</div>
+						</div>
 
-            <div>
-                <div>
-                    <a href="https://www.udemy.com/">
-                        <span>Udemy<i>open_in_new</i></span>
-                    </a>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/nodejs.png') }}"
+							/>
+							<div class="text-center">
+								<p>Node</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    <ul>
-                        <li>Intro to Storytelling: Wow Your Crowd</li>
-                        <li>Create Amazing Responsive Email with Foundation for Emails 2</li>
-                        <li>Google Analytics For Beginners (Step by Step)</li>
-                        <li>MERN Stack Front To Back: Full Stack React, Redux &amp; Node.js</li>
-                        <li>Modern React with Redux [2019 Update]</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="card">
+					<h3 class="skill-title">Backend</h3>
+					<div class="row">
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/python.png') }}"
+							/>
+							<div class="text-center">
+								<p>Python</p>
+							</div>
+						</div>
 
-    <!-- skills start -->
-    <div>
-        <div>
-            <h1>Skills</h1>
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/flask.png') }}"
+							/>
+							<div class="text-center">
+								<p>Flask</p>
+							</div>
+						</div>
 
-            <!-- Skills: HTML -->
-            <div>
-                <div>
-                    <h2>HTML</h2>
-                    <div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/html5.png') }}">HTML5
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/react.png') }}">JSX
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/jinja2.png') }}">Jinja2
-                        </div>
-                    </div>
-                </div>
-            </div><!-- ./ -->
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/ruby.png') }}"
+							/>
+							<div class="text-center">
+								<p>Ruby</p>
+							</div>
+						</div>
 
-            <!-- Skills: CSS -->
-            <div>
-                <div id="skills">
-                    <h2>CSS</h2>
-                    <div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/css3.png') }}">CSS3
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/foundation.png') }}">Foundation
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/materialize.png') }}">Materialize</div>
-                    </div>
-                </div>
-            </div><!-- ./ -->
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/rails.png') }}"
+							/>
+							<div class="text-center">
+								<p>Rails</p>
+							</div>
+						</div>
 
-            <!-- Skills: Javascript -->
-            <div>
-                <div id="skills">
-                    <h2>Javascript</h2>
-                    <div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/react.png') }}">React
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/javascript.png') }}">Javascript
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/material-ui-logo.png') }}">Material-UI
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/nodejs.png') }}">Node
-                        </div>
-                    </div>
-                </div>
-            </div><!-- ./ -->
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/mongodb.png') }}"
+							/>
+							<div class="text-center">
+								<p>MongoDB</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-            <!-- Skills: Backend -->
-            <div>
-                <div id="skills">
-                    <h2>Backend</h2>
-                    <div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/python.png') }}">Python
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/flask.png') }}">Flask
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/ruby.png') }}">Ruby
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/rails.png') }}">Rails
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/mongodb.png') }}">MongoDB
-                        </div>
-                    </div>
-                </div>
-            </div><!-- ./ -->
+				<div class="card">
+					<h3 class="skill-title">Other</h3>
+					<div class="row">
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/github.png') }}"
+							/>
+							<div class="text-center">
+								<p>Github</p>
+							</div>
+						</div>
 
-            <!-- Skills: Other -->
-            <div>
-                <div id="skills">
-                    <h2>Other</h2>
-                    <div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/github.png') }}">Github
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/illustrator.png') }}">Adobe
-                            Illustrator
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/photoshop.png') }}">Adobe
-                            Photoshop</div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/designer.png') }}">Affinity
-                            Designer
-                        </div>
-                        <div><img alt="" src="{{ url_for('static', filename='images/photo.png') }}">Affinity
-                            Photo</div>
-                    </div>
-                </div>
-            </div><!-- ./ -->
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/illustrator.png') }}"
+							/>
+							<div class="text-center">
+								<p>Adobe Illustrator</p>
+							</div>
+						</div>
 
-        </div>
-    </div>
-    <!-- skills end -->
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/photoshop.png') }}"
+							/>
+							<div class="text-center">
+								<p>Adobe Photoshop</p>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/designer.png') }}"
+							/>
+							<div class="text-center">
+								<p>Affinity Designer</p>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-6 text-center">
+							<img
+								class="responsive-img"
+								alt=""
+								src="{{ url_for('static', filename='images/photo.png') }}"
+							/>
+							<div class="text-center">
+								<p>Affinity Photo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
+<!-- main-content end -->
 
+{% endblock %} {% block footer %}
+<p>Want to connect?</p>
+<a class="link-talk" href="{{ url_for('contact') }}">
+	<button class="btn btn-primary btn-talk">Contact Me</button>
+</a>
 {% endblock %}
